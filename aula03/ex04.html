@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu pais</title>
+</head>
+<body>
+    <h1>Qual pais voce esta vivendo</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Confirmar" onclick="saber()">
+    <div id="res">
+
+    </div>
+    <script>
+        function saber () {
+            var txtpais = document.querySelector('input#txtpais')
+            var res = document.querySelector('div#res')
+            res.innerHTML = `Seu pais e  ${vel}km/h`
+            var pais = Text (txtpais)
+            if (pais == 'Brasil') {
+                res.innerHTML = `Seu pais e ${pais}`}
+                res.innerHTML = `Sua velocidade e ${vel}km/h`
+
+
+        
+    }
+    </script> 
+
+    
+</body>
+</html>

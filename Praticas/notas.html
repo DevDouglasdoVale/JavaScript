@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media das notas</title>
+
+    Seu nome <input id="nome" type="text"> <br />
+    Primeira nota <input id="nota1" type="number"> <br />
+    Segunda  nota <input id="nota2" type="number"> <br />
+    <button onclick="media()">Calcular Media</button>
+ 
+    <script type="text/javascript">
+ 
+     function media(){
+      var nome = (document.getElementById("nome").value);
+      var nota1 = parseFloat(document.getElementById("nota1").value);
+      var nota2 = parseFloat(document.getElementById("nota2").value);
+ 
+      var media = (nota1 + nota2)/2 ;
+ 
+      if(media >= 7)
+       if(media==10)
+        alert(`Uauu ${nome}, voce foi Aprovado com exelencia, sua media foi ` + media);
+       else
+        alert(`Parabens ${nome} voce foi aprovado! sua media foi `+ media);
+      else
+       alert(`Infelizmente ${nome}, voce foi Reprovado sua media foi ` + media)
+ 
+     }
+  </script>
+ 
+</head>
+<body>
+    
+</body>
+</html>
